@@ -19,3 +19,25 @@ Mask:
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
+
+NET = input('Введите подсеть и маску :')
+NET = NET.split('/')
+IP = NET[0].split('.')
+IP = [int(IP[0]),int(IP[1]),int(IP[2]),int(IP[3])]
+MASK = int(NET[1])
+MASK = '1'*MASK+'0'*(32-MASK)
+MASK = [MASK[0:8],MASK[8:16],MASK[16:24],MASK[24:32]]
+MASK_DEC = [int(MASK[0],2),int(MASK[1],2),int(MASK[2],2),int(MASK[3],2)]
+
+print_template = """
+Network:
+{0[0]:<8}  {0[1]:<8}  {0[2]:<8}  {0[3]:<8}
+{0[0]:08b}  {0[1]:08b}  {0[2]:08b}  {0[3]:08b}
+
+Mask:
+/{1}
+{2[0]:<8}  {2[1]:<8}  {2[2]:<8}  {2[3]:<8}
+{3[0]}  {3[1]}  {3[2]}  {3[3]}
+"""
+
+print(print_template.format(IP,NET[1],MASK_DEC,MASK))
