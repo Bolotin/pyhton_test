@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 '''
 Задание 5.2a
@@ -44,3 +45,10 @@ london_co = {
         'routing': True
     }
 }
+
+device = input('Enter dvice name(r1,r2,sw1):')
+param = input('Enter parameter name(location,vendor,model,ios,ip):')
+print('Data:')
+print(london_co[device][param])
+
+
