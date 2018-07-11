@@ -12,3 +12,11 @@
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
+
+from sys import argv
+
+with open(argv[1]) as file:
+    for line in file:
+        if not line.startswith('!'):
+            print(line)
+            
