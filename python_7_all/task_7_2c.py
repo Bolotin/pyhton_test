@@ -16,4 +16,12 @@
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
 
+
 ignore = ['duplex', 'alias', 'Current configuration']
+
+from sys import argv
+
+with open(argv[1]) as file1, open(argv[2],'a') as file2:
+    for line in file1:
+        if not any(word in line for word in ignore):
+            file2.write(line)

@@ -13,3 +13,14 @@
 '''
 
 ignore = ['duplex', 'alias', 'Current configuration']
+
+from sys import argv
+
+with open(argv[1]) as file:
+    for line in file:
+        if not line.startswith('!') and not any(word in line for word in ignore):
+            print(line)
+            
+    
+            
+            
