@@ -23,4 +23,4 @@ with open('CAM_table.txt') as f:
                 result[vlan] = [mac,interface]
 
 vlan = input('Please, enter number of vlan: ')         
-print('{}   {}  {}'.format(vlan, result[vlan][0], result[vlan][1]))    
+print('{}   {}  {}'.format(vlan, *result[vlan]))    
