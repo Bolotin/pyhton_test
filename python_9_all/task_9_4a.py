@@ -49,3 +49,26 @@ def check_ignore(command, ignore):
 
     '''
     return any(word in command for word in ignore)
+    
+def map_config(file_name, ignore):
+    result = {}
+    with open(file_name) as f:
+        for line in f:
+            if line.startswith('!') or any(word in line for word in ignore):
+                continue
+            elif not line.startswith(' '):
+                key = line
+                result[key] = []
+            elif line.startswith(' ') and not line.startswith('  '):
+                result[key].append(line.strip())
+                subkey = line
+            elif line.startswith('  '):
+                if type(result[key]) == list:
+                    result[key] = {item:[] for item in result[key]}
+                    result[key][subkey] = []
+                result[key][subkey].append(line.strip())
+    return result
+
+print(map_config('config_r1.txt',ignore))
+            
+

@@ -24,15 +24,21 @@
 ignore = ['duplex', 'alias', 'Current configuration']
 
 
-def ignore_command(command, ignore):
-    '''
-    Функция проверяет содержится ли в команде слово из списка ignore.
 
-    command - строка. Команда, которую надо проверить
-    ignore - список. Список слов
+def clear_config(file_name, ignore):
+    result = {}
+    with open(file_name) as f:
+        for line in f:
+            if line.startswith('!') or any(word in line for word in ignore):
+                continue
+            elif not line.startswith(' '):
+                key = line
+                result[key] = []
+            else:
+                result[key].append(line.strip())
+    return result
 
-    Возвращает
-    * True, если в команде содержится слово из списка ignore
-    * False - если нет
-    '''
-    return any(word in command for word in ignore)
+for key,item in clear_config('config_sw1.txt',ignore).items():
+    print(key,item)
+  
+    
