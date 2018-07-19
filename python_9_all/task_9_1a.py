@@ -15,7 +15,7 @@
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 
 '''
-
+from test import access_template,port_security
 
 def generate_access_config(access, psecurity = False):
     '''
@@ -31,7 +31,6 @@ def generate_access_config(access, psecurity = False):
 
     Возвращает список всех команд, которые были сгенерированы на основе шаблона
     '''
-
     access_template = [
         'switchport mode access', 'switchport access vlan {}',
         'switchport nonegotiate', 'spanning-tree portfast',
@@ -43,7 +42,7 @@ def generate_access_config(access, psecurity = False):
         'switchport port-security violation restrict',
         'switchport port-security'
     ]
-    
+   
     result = []
     for item in access.items():
         result.append('interface {}'.format(item[0]))
