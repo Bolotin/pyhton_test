@@ -50,5 +50,10 @@ if __name__ == '__main__':
         for host in hosts:
             if args.unreachable or result[host] =='alive':
                 print('The {} is {}'.format(host,result[host]))
+        if args.file_name:
+            with open(args.file_name, 'w+') as f:
+                for host in hosts:
+                    if args.unreachable or result[host] =='alive':
+                        f.write('{},{}\n'.format(host,result[host]))
     else:
         print('{} is not an IPv4 network!'.format(args.net))
