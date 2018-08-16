@@ -57,3 +57,4 @@ if __name__ == '__main__':
                         f.write('{},{}\n'.format(host,result[host]))
     else:
         print('{} is not an IPv4 network!'.format(args.net))
+        
