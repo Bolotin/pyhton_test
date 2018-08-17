@@ -16,12 +16,14 @@
 '''
 
 import subprocess
+from ipaddress import ip_network
 
 def check_ip_address(hosts):
     alive_hosts = []
     unreachable_hosts = []
     for host in hosts:
-        reply = subprocess.run('ping -c 3 {}'.format(host), shell = True)
+        reply = subprocess.run('ping -c 1 {}'.format(host), shell = True, stdout = subprocess.DEVNULL)
+        print('.',end='')
         if reply.returncode == 0:
             alive_hosts.append(host)
         else:
@@ -29,5 +31,12 @@ def check_ip_address(hosts):
     return(alive_hosts,unreachable_hosts)
 
 if __name__=='__main__':
-    test = ['192.168.0.190','192.168.0.191','192.168.0.192']
-    
+    net = ip_network('192.169.0.128/25')
+    hosts = [str(host) for host in net]
+    alive,unreach = check_ip_address(hosts)
+    print('\nAlive hosts:')
+    for host in alive:
+        print(host)
+    print('\nUnreachable host:')
+    for host in unreach:
+        print(host)
