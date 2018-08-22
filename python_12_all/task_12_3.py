@@ -21,3 +21,8 @@ Reachable    Unreachable
 То есть, до выполнения функции и после списки должны выглядеть одинаково.
 
 '''
+
+import tabulate
+
+def ip_table(reachable,unreachable):
+    

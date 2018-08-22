@@ -22,8 +22,8 @@ def check_ip_address(hosts):
     alive_hosts = []
     unreachable_hosts = []
     for host in hosts:
-        reply = subprocess.run('ping -c 1 {}'.format(host), shell = True, stdout = subprocess.DEVNULL)
-        print('.',end='')
+        reply = subprocess.run('ping -c 3 {}'.format(host), shell = True, stdout = subprocess.DEVNULL)
+        print('.')
         if reply.returncode == 0:
             alive_hosts.append(host)
         else:
@@ -31,7 +31,7 @@ def check_ip_address(hosts):
     return(alive_hosts,unreachable_hosts)
 
 if __name__=='__main__':
-    net = ip_network('192.169.0.128/25')
+    net = ip_network('192.168.0.0/29')
     hosts = [str(host) for host in net]
     alive,unreach = check_ip_address(hosts)
     print('\nAlive hosts:')
