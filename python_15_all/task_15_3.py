@@ -30,11 +30,12 @@ def parse_cfg(filename,regex):
         match = finditer(regex,f.read())
     result = []
     for item in match:
+        print(item.groups)
         result.append(item.groups())
     return result
 
 filename = 'config_r1.txt'
-regex = 'ip address ((?:\d{1,3}\.){3}\d{1,3}) ((?:\d{1,3}\.){3}\d{1,3})' 
+regex = 'ip address ((?:\d{1,3}\.){3}\d{1,3}) ((?:\d{1,3}\.){3}\d{1,3})'
 
 for item in parse_cfg(filename, regex):
     print(item)
