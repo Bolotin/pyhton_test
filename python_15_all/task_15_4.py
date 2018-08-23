@@ -21,3 +21,21 @@
 Проверить работу функции на примере файла sh_ip_int_br_2.txt.
 
 '''
+
+from re import finditer
+from pprint import pprint
+
+def parse_sh_ip_int_br(filename):
+    result = []
+    regex = '(?P<interface>\S+) +(?P<ip_adress>[\d.]+|unassigned) +\S+ +\S+ +(?P<status>up|down|administratively down) +(?P<protocol>up|down)'
+    with open(filename) as f:
+        matches = finditer(regex,f.read())
+        for match in matches:
+            result.append(match.groups())
+    return result
+
+filename = 'sh_ip_int_br_2.txt'
+if __name__=='__main__':
+    pprint(parse_sh_ip_int_br(filename))
+    
+

@@ -20,3 +20,22 @@
 диапазоны адресов и так далее, так как обрабатывается вывод команды, а не ввод пользователя.
 
 '''
+
+from re import search
+
+def parse_cfg(filename, regex):
+    result = {}
+    with open(filename) as f:
+        for line in f:
+            match = search(regex,line)
+            if match and match.lastgroup == 'interface':
+                interface = match.group(match.lastgroup)
+            elif match:
+                result[interface] = tuple(item for item in match.groups() if item)
+    return result
+
+filename = 'config_r1.txt'
+regex = ('interface (?P<interface>\S+)''|ip address (?P<address>(?:\d{1,3}\.){3}\d{1,3}) (?P<mask>(?:\d{1,3}\.){3}\d{1,3})')
+
+print(parse_cfg(filename,regex)) 
+        

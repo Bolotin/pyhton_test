@@ -21,5 +21,14 @@
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 
 '''
+from task_15_4 import filename, parse_sh_ip_int_br
+from pprint import pprint
+
+def convert_to_dict(headers, data):
+    result = []
+    for line in data:
+        result.append(dict(zip(headers,line)))
+    return result
 
 headers = ['interface', 'address', 'status', 'protocol']
+pprint(convert_to_dict(headers, parse_sh_ip_int_br(filename)))
