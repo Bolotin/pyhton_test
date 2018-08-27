@@ -25,3 +25,5 @@
 
 Не копировать код функции parse_sh_cdp_neighbors
 '''
+
+from task_17_2 import parse_sh_cdp_neighbors
