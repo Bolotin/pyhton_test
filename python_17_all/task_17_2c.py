@@ -29,3 +29,19 @@
 > pip install graphviz
 
 '''
+from draw_network_graph import draw_topology
+from pprint import pprint
+import yaml
+
+if __name__ == '__main__':
+    topology = {}
+    topology_filename = 'topology.yaml'
+    with open(topology_filename) as f:
+        topology_yaml = yaml.load(f)
+    for host, data in topology_yaml.items():
+        for local_interface, neighbor_data in data.items():
+            neighbor = tuple(neighbor_data.keys())[0]
+            neighbor_interface = tuple(neighbor_data.values())[0]
+            topology.update({(host, local_interface): (neighbor, neighbor_interface)})
+    pprint(topology)
+    draw_topology(topology, 'img/my_test_topology')
