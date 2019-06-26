@@ -60,7 +60,6 @@ print(template.format(PREFIX,METRIC,NEXT_HOP,LAST_UPDATE,INTERFACE))
 #print(template.format(Prefix, AD/Metric, Next-Hop, Last_updat, Interface))
 
 #4.7
-print('exercise 4.7')
 
 MAC = 'AAAA:BBBB:CCCC'
 MAC = MAC.split(':')
@@ -69,3 +68,12 @@ for i in range(len(MAC)):
 
 MAC = ''.join(MAC)
 print(MAC)
+
+#4.8
+
+print('exercise 4.8')
+IP = '192.168.3.1'
+IP = IP.split('.')
+IP = [int(octet) for octet in IP]
+print('{:<10} {:<10} {:<10} {:<10}'.format(*IP))
+print('{:010b} {:010b} {:010b} {:010b}'.format(*IP))
