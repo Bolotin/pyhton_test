@@ -26,5 +26,5 @@ london_co = {
 
 device = input('Enter device name:')
 parameters = ', '.join(london_co[device].keys())
-parameter = input('Enter parameter name({}):'.format(parameters))
-print(london_co[device][parameter])
+parameter = input('Enter parameter name({}):'.format(parameters)).lower()
+print(london_co[device].get(parameter, 'There is no such parameter'))
