@@ -47,9 +47,17 @@ def check_device(ip):
     else:
         return False
 
+def parse_ap_cisco(src_file, dst_file):
+    pass
+
+def parse_ap_huawei(src_file, dst_file):
+    pass
+
+def convert_huawei_mac_to_cisco(mac):
+    pass
 
 if __name__ == '__main__':
-
+    #Пока список контроллеров задаем локально тут, но в дальнейшем необходима внешняя БД
     devices = dict(CWC001 = dict(address = '10.47.208.1', vendor = 'cisco'),
                    CWC003 = dict(address = '10.47.208.17', vendor = 'cisco'),
                    HWC001 = dict(address = '10.47.208.65', vendor = 'huawei'))
@@ -57,8 +65,15 @@ if __name__ == '__main__':
     user = input('User: ')
     password = getpass.getpass('Password: ')
     for device in devices:
-        filename = '{}-{}.txt'.format(device,datetime.today().strftime('%d-%m-%Y'))
-        ip = devices[device][address]
+        filename = '{}_{}.txt'.format(device,datetime.today().strftime('%d_%m_%Y'))
+        csv_filename = '{}_{}.csv'.format(device,datetime.today().strftime('%d_%m_%Y'))
+        ip = devices[device]['address']
         if not check_device(ip):
             print('Device {} in unavailable =('.format(device))
             continue
+        if devices[device]['vendor'] == 'cisco':
+            get_ap_cisco(ip, user, password, filename)
+            parse_ap_cisco(filename, csv_filename)
+        elif devices[device]['vendor'] == 'huawei':
+            get_ap_huawei(ip, user, password, filename)
+            parse_ap_huawei(filename, csv_filename)
