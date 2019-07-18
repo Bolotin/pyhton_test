@@ -48,7 +48,12 @@ def check_device(ip):
         return False
 
 def parse_ap_cisco(src_file, dst_file):
-    pass
+    with open(src_file, 'r') as src, open(dst_file,'w') as dst:
+        for line in src:
+            regex = '^(?P<AP_NAME>\S+).*(?P<AP_MAC>(\w\w:){5}\w\w).*\s+(?P<AP_ADDRESS>(\d{1,3}\.){3}\d{1,3})'
+            search = re.search(regex, line)
+            if search:
+                dst.write('{}, {}, {} \n'.format(*search.group('AP_NAME','AP_MAC','AP_ADDRESS')))
 
 def parse_ap_huawei(src_file, dst_file):
     pass
