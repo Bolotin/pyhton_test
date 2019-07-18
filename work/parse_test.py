@@ -8,4 +8,4 @@ with open(filename, 'r') as file, open(dest_filename,'w') as dest_file:
         search = re.search(regex, line)
         if search:
             print('{:15} {:30} {:15}'.format(*search.group('AP_MAC', 'AP_NAME', 'AP_ADDRESS')))
-            #dest_file.write('{}, {}, {} \n'.format(*search.group('AP_NAME','AP_MAC','AP_ADDRESS')))
+            dest_file.write('{}, {}, {} \n'.format(*search.group('AP_NAME','AP_MAC','AP_ADDRESS')))

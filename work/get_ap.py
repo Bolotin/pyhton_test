@@ -7,7 +7,7 @@
 Результаты вывода с каждого контроллера хранятся в отдельном файле, <WLC name>.txt
 После получения уже эти результаты парсятся (MAC адрес Huawei надо привести к виду XX:XX:XX:XX:XX:XX).
 И сохраняются в отдельный репорт AP_INFO_<day>_<month>_<ear>.CSV
-Репорт должен содержать столбцы AP_NAME, AP_MAC, AP_ADDRESS, AP_GROUP, WLC_NAME
+Репорт должен содержать столбцы AP_MAC, AP_NAME, AP_ADDRESS. Позже надо доделать AP_GROUP, AP_LOCATION, WLC_NAME
 """
 from netmiko import ConnectHandler
 from pprint import pprint
@@ -47,19 +47,27 @@ def check_device(ip):
     else:
         return False
 
-def parse_ap_cisco(src_file, dst_file):
-    with open(src_file, 'r') as src, open(dst_file,'w') as dst:
+def parse_ap_cisco(src_filename, dst_filename):
+    with open(src_filename, 'r') as src, open(dst_filename,'w') as dst:
         for line in src:
             regex = '^(?P<AP_NAME>\S+).*(?P<AP_MAC>(\w\w:){5}\w\w).*\s+(?P<AP_ADDRESS>(\d{1,3}\.){3}\d{1,3})'
             search = re.search(regex, line)
             if search:
-                dst.write('{}, {}, {} \n'.format(*search.group('AP_NAME','AP_MAC','AP_ADDRESS')))
+                AP_MAC, AP_NAME, AP_ADDRESS = *search.group('AP_MAC','AP_NAME','AP_ADDRESS')
+                dst.write('{}, {}, {} \n'.format(AP_MAC, AP_NAME, AP_ADDRESS))
 
-def parse_ap_huawei(src_file, dst_file):
-    pass
+def parse_ap_huawei(src_filename, dst_filename):
+    with open(src_filename, 'r') as src, open(dst_filename,'w') as dst:
+        for line in src:
+            regex = '^(?P<AP_ID>\d+\s+(?P<AP_MAC>\w{4}-\w{4}-\w{4})\s+(?P<AP_NAME>\S+)\s+(?P<AP_GROUP>\S+)\s+(?P<AP_ADDRESS>(\d{1,3}\.){3}\d{1,3}))'
+            search = re.search(regex, line)
+            if search:
+                AP_MAC, AP_NAME, AP_ADDRESS = *search.group('AP_MAC','AP_NAME','AP_ADDRESS')
+                dst.write('{}, {}, {} \n'.format(convert_huawei_mac_to_cisco(AP_MAC), AP_NAME, AP_ADDRESS))
 
-def convert_huawei_mac_to_cisco(mac):
-    pass
+def convert_huawei_mac_to_cisco(huawei_mac):
+    cisco_mac = '{}:{}:{}:{}:{}:{}'.format(*re.search('(\w\w)(\w\w)-(\w\w)(\w\w)-(\w\w)(\w\w)',huawei_mac).groups())
+    return cisco_mac
 
 if __name__ == '__main__':
     #Пока список контроллеров задаем локально тут, но в дальнейшем необходима внешняя БД
@@ -70,15 +78,23 @@ if __name__ == '__main__':
     user = input('User: ')
     password = getpass.getpass('Password: ')
     for device in devices:
-        filename = '{}_{}.txt'.format(device,datetime.today().strftime('%d_%m_%Y'))
-        csv_filename = '{}_{}.csv'.format(device,datetime.today().strftime('%d_%m_%Y'))
+        filename = './tmp/{}_{}.txt'.format(device,datetime.today().strftime('%d_%m_%Y'))
+        parsed_filename = './tmp/{}_{}_parsed.txt'.format(device,datetime.today().strftime('%d_%m_%Y'))
         ip = devices[device]['address']
         if not check_device(ip):
-            print('Device {} in unavailable =('.format(device))
+            print('{} in unavailable. Sorry.'.format(device))
             continue
         if devices[device]['vendor'] == 'cisco':
+            print('Start connection with {}'.format(device))
             get_ap_cisco(ip, user, password, filename)
-            parse_ap_cisco(filename, csv_filename)
+            print('Connection with {} closed. Infortainon in {}'.format(device, filename))
+            print('Start parsing information in file {}'.format(filename))
+            parse_ap_cisco(filename, parsed_filename)
+            print('Finished parsing. Parsed information in {}'.format(parsed_filename))
         elif devices[device]['vendor'] == 'huawei':
+            print('Start connection with {}'.format(device))
             get_ap_huawei(ip, user, password, filename)
-            parse_ap_huawei(filename, csv_filename)
+            print('Connection with {} closed. Infortainon in {}'.format(device, filename))
+            print('Start parsing information in file {}'.format(filename))
+            parse_ap_huawei(filename, parsed_filename)
+            print('Finished parsing. Parsed information in {}'.format(parsed_filename))
