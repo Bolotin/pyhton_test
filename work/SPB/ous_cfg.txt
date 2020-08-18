@@ -1,0 +1,2400 @@
+
+vlan 1801
+name e08z_100.70.64.0/23
+exit
+
+
+interface vlan 1801
+description e08z_100.70.64.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.65.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1801
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.65.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1802
+name e08z_100.70.66.0/23
+exit
+
+
+interface vlan 1802
+description e08z_100.70.66.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.67.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1802
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.67.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1803
+name e08z_100.70.68.0/23
+exit
+
+
+interface vlan 1803
+description e08z_100.70.68.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.69.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1803
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.69.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1804
+name e08z_100.70.70.0/23
+exit
+
+
+interface vlan 1804
+description e08z_100.70.70.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.71.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1804
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.71.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1805
+name e08z_100.70.72.0/23
+exit
+
+
+interface vlan 1805
+description e08z_100.70.72.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.73.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1805
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.73.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1806
+name e08z_100.70.74.0/23
+exit
+
+
+interface vlan 1806
+description e08z_100.70.74.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.75.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1806
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.75.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1807
+name e08z_100.70.76.0/23
+exit
+
+
+interface vlan 1807
+description e08z_100.70.76.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.77.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1807
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.77.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1808
+name e08z_100.70.78.0/23
+exit
+
+
+interface vlan 1808
+description e08z_100.70.78.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.79.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1808
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.79.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1809
+name e08z_100.70.80.0/23
+exit
+
+
+interface vlan 1809
+description e08z_100.70.80.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.81.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1809
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.81.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1810
+name e08z_100.70.82.0/23
+exit
+
+
+interface vlan 1810
+description e08z_100.70.82.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.83.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1810
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.83.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1811
+name e08z_100.70.84.0/23
+exit
+
+
+interface vlan 1811
+description e08z_100.70.84.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.85.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1811
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.85.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1812
+name e08z_100.70.86.0/23
+exit
+
+
+interface vlan 1812
+description e08z_100.70.86.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.87.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1812
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.87.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1813
+name e08z_100.70.88.0/23
+exit
+
+
+interface vlan 1813
+description e08z_100.70.88.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.89.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1813
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.89.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1814
+name e08z_100.70.90.0/23
+exit
+
+
+interface vlan 1814
+description e08z_100.70.90.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.91.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1814
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.91.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1815
+name e08z_100.70.92.0/23
+exit
+
+
+interface vlan 1815
+description e08z_100.70.92.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.93.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1815
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.93.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1816
+name e08z_100.70.94.0/23
+exit
+
+
+interface vlan 1816
+description e08z_100.70.94.0/23
+no shutdown
+mtu 9142
+vrf member e08z
+no ip redirect
+ip address 100.70.95.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1816
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.70.95.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1901
+name e09z_100.64.0.0/23
+exit
+
+
+interface vlan 1901
+description e09z_100.64.0.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.1.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1901
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.1.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1902
+name e09z_100.64.2.0/23
+exit
+
+
+interface vlan 1902
+description e09z_100.64.2.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.3.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1902
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.3.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1903
+name e09z_100.64.4.0/23
+exit
+
+
+interface vlan 1903
+description e09z_100.64.4.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.5.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1903
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.5.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1904
+name e09z_100.64.6.0/23
+exit
+
+
+interface vlan 1904
+description e09z_100.64.6.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.7.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1904
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.7.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1905
+name e09z_100.64.8.0/23
+exit
+
+
+interface vlan 1905
+description e09z_100.64.8.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.9.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1905
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.9.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1906
+name e09z_100.64.10.0/23
+exit
+
+
+interface vlan 1906
+description e09z_100.64.10.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.11.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1906
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.11.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1907
+name e09z_100.64.12.0/23
+exit
+
+
+interface vlan 1907
+description e09z_100.64.12.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.13.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1907
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.13.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1908
+name e09z_100.64.14.0/23
+exit
+
+
+interface vlan 1908
+description e09z_100.64.14.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.15.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1908
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.15.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1909
+name e09z_100.64.16.0/23
+exit
+
+
+interface vlan 1909
+description e09z_100.64.16.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.17.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1909
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.17.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1910
+name e09z_100.64.18.0/23
+exit
+
+
+interface vlan 1910
+description e09z_100.64.18.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.19.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1910
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.19.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1911
+name e09z_100.64.20.0/23
+exit
+
+
+interface vlan 1911
+description e09z_100.64.20.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.21.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1911
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.21.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1912
+name e09z_100.64.22.0/23
+exit
+
+
+interface vlan 1912
+description e09z_100.64.22.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.23.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1912
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.23.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1913
+name e09z_100.64.24.0/23
+exit
+
+
+interface vlan 1913
+description e09z_100.64.24.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.25.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1913
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.25.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1914
+name e09z_100.64.26.0/23
+exit
+
+
+interface vlan 1914
+description e09z_100.64.26.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.27.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1914
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.27.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1915
+name e09z_100.64.28.0/23
+exit
+
+
+interface vlan 1915
+description e09z_100.64.28.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.29.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1915
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.29.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1916
+name e09z_100.64.30.0/23
+exit
+
+
+interface vlan 1916
+description e09z_100.64.30.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.31.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1916
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.31.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1917
+name e09z_100.64.32.0/23
+exit
+
+
+interface vlan 1917
+description e09z_100.64.32.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.33.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1917
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.33.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1918
+name e09z_100.64.34.0/23
+exit
+
+
+interface vlan 1918
+description e09z_100.64.34.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.35.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1918
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.35.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1919
+name e09z_100.64.36.0/23
+exit
+
+
+interface vlan 1919
+description e09z_100.64.36.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.37.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1919
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.37.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1920
+name e09z_100.64.38.0/23
+exit
+
+
+interface vlan 1920
+description e09z_100.64.38.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.39.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1920
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.39.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1921
+name e09z_100.64.40.0/23
+exit
+
+
+interface vlan 1921
+description e09z_100.64.40.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.41.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1921
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.41.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1922
+name e09z_100.64.42.0/23
+exit
+
+
+interface vlan 1922
+description e09z_100.64.42.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.43.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1922
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.43.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1923
+name e09z_100.64.44.0/23
+exit
+
+
+interface vlan 1923
+description e09z_100.64.44.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.45.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1923
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.45.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1924
+name e09z_100.64.46.0/23
+exit
+
+
+interface vlan 1924
+description e09z_100.64.46.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.47.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1924
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.47.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1925
+name e09z_100.64.48.0/23
+exit
+
+
+interface vlan 1925
+description e09z_100.64.48.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.49.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1925
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.49.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1926
+name e09z_100.64.50.0/23
+exit
+
+
+interface vlan 1926
+description e09z_100.64.50.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.51.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1926
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.51.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1927
+name e09z_100.64.52.0/23
+exit
+
+
+interface vlan 1927
+description e09z_100.64.52.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.53.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1927
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.53.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1928
+name e09z_100.64.54.0/23
+exit
+
+
+interface vlan 1928
+description e09z_100.64.54.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.55.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1928
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.55.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1929
+name e09z_100.64.56.0/23
+exit
+
+
+interface vlan 1929
+description e09z_100.64.56.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.57.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1929
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.57.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1930
+name e09z_100.64.58.0/23
+exit
+
+
+interface vlan 1930
+description e09z_100.64.58.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.59.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1930
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.59.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1931
+name e09z_100.64.60.0/23
+exit
+
+
+interface vlan 1931
+description e09z_100.64.60.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.61.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1931
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.61.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1932
+name e09z_100.64.62.0/23
+exit
+
+
+interface vlan 1932
+description e09z_100.64.62.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.63.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1932
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.63.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1933
+name e09z_100.64.64.0/23
+exit
+
+
+interface vlan 1933
+description e09z_100.64.64.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.65.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1933
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.65.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1934
+name e09z_100.64.66.0/23
+exit
+
+
+interface vlan 1934
+description e09z_100.64.66.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.67.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1934
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.67.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1935
+name e09z_100.64.68.0/23
+exit
+
+
+interface vlan 1935
+description e09z_100.64.68.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.69.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1935
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.69.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1936
+name e09z_100.64.70.0/23
+exit
+
+
+interface vlan 1936
+description e09z_100.64.70.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.71.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1936
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.71.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1937
+name e09z_100.64.72.0/23
+exit
+
+
+interface vlan 1937
+description e09z_100.64.72.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.73.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1937
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.73.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1938
+name e09z_100.64.74.0/23
+exit
+
+
+interface vlan 1938
+description e09z_100.64.74.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.75.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1938
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.75.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1939
+name e09z_100.64.76.0/23
+exit
+
+
+interface vlan 1939
+description e09z_100.64.76.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.77.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1939
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.77.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1940
+name e09z_100.64.78.0/23
+exit
+
+
+interface vlan 1940
+description e09z_100.64.78.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.79.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1940
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.79.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1941
+name e09z_100.64.80.0/23
+exit
+
+
+interface vlan 1941
+description e09z_100.64.80.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.81.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1941
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.81.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1942
+name e09z_100.64.82.0/23
+exit
+
+
+interface vlan 1942
+description e09z_100.64.82.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.83.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1942
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.83.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1943
+name e09z_100.64.84.0/23
+exit
+
+
+interface vlan 1943
+description e09z_100.64.84.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.85.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1943
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.85.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1944
+name e09z_100.64.86.0/23
+exit
+
+
+interface vlan 1944
+description e09z_100.64.86.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.87.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1944
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.87.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1945
+name e09z_100.64.88.0/23
+exit
+
+
+interface vlan 1945
+description e09z_100.64.88.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.89.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1945
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.89.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1946
+name e09z_100.64.90.0/23
+exit
+
+
+interface vlan 1946
+description e09z_100.64.90.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.91.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1946
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.91.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1947
+name e09z_100.64.92.0/23
+exit
+
+
+interface vlan 1947
+description e09z_100.64.92.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.93.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1947
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.93.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1948
+name e09z_100.64.94.0/23
+exit
+
+
+interface vlan 1948
+description e09z_100.64.94.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.95.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1948
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.95.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1949
+name e09z_100.64.96.0/23
+exit
+
+
+interface vlan 1949
+description e09z_100.64.96.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.97.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1949
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.97.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1950
+name e09z_100.64.98.0/23
+exit
+
+
+interface vlan 1950
+description e09z_100.64.98.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.99.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1950
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.99.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1951
+name e09z_100.64.100.0/23
+exit
+
+
+interface vlan 1951
+description e09z_100.64.100.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.101.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1951
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.101.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1952
+name e09z_100.64.102.0/23
+exit
+
+
+interface vlan 1952
+description e09z_100.64.102.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.103.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1952
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.103.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1953
+name e09z_100.64.104.0/23
+exit
+
+
+interface vlan 1953
+description e09z_100.64.104.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.105.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1953
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.105.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1954
+name e09z_100.64.106.0/23
+exit
+
+
+interface vlan 1954
+description e09z_100.64.106.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.107.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1954
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.107.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1955
+name e09z_100.64.108.0/23
+exit
+
+
+interface vlan 1955
+description e09z_100.64.108.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.109.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1955
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.109.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1956
+name e09z_100.64.110.0/23
+exit
+
+
+interface vlan 1956
+description e09z_100.64.110.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.111.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1956
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.111.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1957
+name e09z_100.64.112.0/23
+exit
+
+
+interface vlan 1957
+description e09z_100.64.112.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.113.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1957
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.113.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1958
+name e09z_100.64.114.0/23
+exit
+
+
+interface vlan 1958
+description e09z_100.64.114.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.115.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1958
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.115.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1959
+name e09z_100.64.116.0/23
+exit
+
+
+interface vlan 1959
+description e09z_100.64.116.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.117.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1959
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.117.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1960
+name e09z_100.64.118.0/23
+exit
+
+
+interface vlan 1960
+description e09z_100.64.118.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.119.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1960
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.119.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1961
+name e09z_100.64.120.0/23
+exit
+
+
+interface vlan 1961
+description e09z_100.64.120.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.121.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1961
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.121.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1962
+name e09z_100.64.122.0/23
+exit
+
+
+interface vlan 1962
+description e09z_100.64.122.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.123.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1962
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.123.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1963
+name e09z_100.64.124.0/23
+exit
+
+
+interface vlan 1963
+description e09z_100.64.124.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.125.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1963
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.125.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+
+
+vlan 1964
+name e09z_100.64.126.0/23
+exit
+
+
+interface vlan 1964
+description e09z_100.64.126.0/23
+no shutdown
+mtu 9142
+vrf member e09z
+no ip redirect
+ip address 100.64.127.251/23
+no ipv6 redirect
+no ip arp gratuitous hsrp duplicate
+hsrp version 2
+hsrp 1964
+authentication md5 key-chain HSRP_KEY
+preempt delay reload 60
+priority 120
+timers 5 15
+ip 100.64.127.250
+track 1 decrement 50
+exit
+ip dhcp relay address 100.104.248.1
+ip dhcp relay address 10.54.220.1
+ip dhcp relay address 10.34.240.73
+ip dhcp relay address 10.34.240.74
+exit
+

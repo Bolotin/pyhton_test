@@ -1,0 +1,240 @@
+
+no interfaces vlan 1801
+no vlan 1801
+
+no interfaces vlan 1802
+no vlan 1802
+
+no interfaces vlan 1803
+no vlan 1803
+
+no interfaces vlan 1804
+no vlan 1804
+
+no interfaces vlan 1805
+no vlan 1805
+
+no interfaces vlan 1806
+no vlan 1806
+
+no interfaces vlan 1807
+no vlan 1807
+
+no interfaces vlan 1808
+no vlan 1808
+
+no interfaces vlan 1809
+no vlan 1809
+
+no interfaces vlan 1810
+no vlan 1810
+
+no interfaces vlan 1811
+no vlan 1811
+
+no interfaces vlan 1812
+no vlan 1812
+
+no interfaces vlan 1813
+no vlan 1813
+
+no interfaces vlan 1814
+no vlan 1814
+
+no interfaces vlan 1815
+no vlan 1815
+
+no interfaces vlan 1816
+no vlan 1816
+
+no interfaces vlan 1901
+no vlan 1901
+
+no interfaces vlan 1902
+no vlan 1902
+
+no interfaces vlan 1903
+no vlan 1903
+
+no interfaces vlan 1904
+no vlan 1904
+
+no interfaces vlan 1905
+no vlan 1905
+
+no interfaces vlan 1906
+no vlan 1906
+
+no interfaces vlan 1907
+no vlan 1907
+
+no interfaces vlan 1908
+no vlan 1908
+
+no interfaces vlan 1909
+no vlan 1909
+
+no interfaces vlan 1910
+no vlan 1910
+
+no interfaces vlan 1911
+no vlan 1911
+
+no interfaces vlan 1912
+no vlan 1912
+
+no interfaces vlan 1913
+no vlan 1913
+
+no interfaces vlan 1914
+no vlan 1914
+
+no interfaces vlan 1915
+no vlan 1915
+
+no interfaces vlan 1916
+no vlan 1916
+
+no interfaces vlan 1917
+no vlan 1917
+
+no interfaces vlan 1918
+no vlan 1918
+
+no interfaces vlan 1919
+no vlan 1919
+
+no interfaces vlan 1920
+no vlan 1920
+
+no interfaces vlan 1921
+no vlan 1921
+
+no interfaces vlan 1922
+no vlan 1922
+
+no interfaces vlan 1923
+no vlan 1923
+
+no interfaces vlan 1924
+no vlan 1924
+
+no interfaces vlan 1925
+no vlan 1925
+
+no interfaces vlan 1926
+no vlan 1926
+
+no interfaces vlan 1927
+no vlan 1927
+
+no interfaces vlan 1928
+no vlan 1928
+
+no interfaces vlan 1929
+no vlan 1929
+
+no interfaces vlan 1930
+no vlan 1930
+
+no interfaces vlan 1931
+no vlan 1931
+
+no interfaces vlan 1932
+no vlan 1932
+
+no interfaces vlan 1933
+no vlan 1933
+
+no interfaces vlan 1934
+no vlan 1934
+
+no interfaces vlan 1935
+no vlan 1935
+
+no interfaces vlan 1936
+no vlan 1936
+
+no interfaces vlan 1937
+no vlan 1937
+
+no interfaces vlan 1938
+no vlan 1938
+
+no interfaces vlan 1939
+no vlan 1939
+
+no interfaces vlan 1940
+no vlan 1940
+
+no interfaces vlan 1941
+no vlan 1941
+
+no interfaces vlan 1942
+no vlan 1942
+
+no interfaces vlan 1943
+no vlan 1943
+
+no interfaces vlan 1944
+no vlan 1944
+
+no interfaces vlan 1945
+no vlan 1945
+
+no interfaces vlan 1946
+no vlan 1946
+
+no interfaces vlan 1947
+no vlan 1947
+
+no interfaces vlan 1948
+no vlan 1948
+
+no interfaces vlan 1949
+no vlan 1949
+
+no interfaces vlan 1950
+no vlan 1950
+
+no interfaces vlan 1951
+no vlan 1951
+
+no interfaces vlan 1952
+no vlan 1952
+
+no interfaces vlan 1953
+no vlan 1953
+
+no interfaces vlan 1954
+no vlan 1954
+
+no interfaces vlan 1955
+no vlan 1955
+
+no interfaces vlan 1956
+no vlan 1956
+
+no interfaces vlan 1957
+no vlan 1957
+
+no interfaces vlan 1958
+no vlan 1958
+
+no interfaces vlan 1959
+no vlan 1959
+
+no interfaces vlan 1960
+no vlan 1960
+
+no interfaces vlan 1961
+no vlan 1961
+
+no interfaces vlan 1962
+no vlan 1962
+
+no interfaces vlan 1963
+no vlan 1963
+
+no interfaces vlan 1964
+no vlan 1964
